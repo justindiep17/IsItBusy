@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Added requirements.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Remove Database For Testing">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,28 @@
       <option name="project" value="LOCAL" />
       <updated>1627200639915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove Database For Testing">
+      <created>1627201080033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627201080033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Remove Database For Testing">
+      <created>1627201113624</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627201113624</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Remove Database For Testing">
+      <created>1627201214924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627201214924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +151,7 @@
     <MESSAGE value="First Push. Uploaded Project To Github" />
     <MESSAGE value="Setup WSGI Server For Deployment On Heroku" />
     <MESSAGE value="Added requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt" />
+    <MESSAGE value="Remove Database For Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Database For Testing" />
   </component>
 </project>
