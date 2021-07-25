@@ -23,7 +23,7 @@ def submit():
 
 @app.route("/search-submit")
 def search_submit():
-    user_ip = request.remote_addr
+    user_ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     # response_ll = requests.get("http://ip-api.com/json/" + user_ip).json()
     # lat = str(response_ll["lat"])
     # lon = str(response_ll["lon"])
