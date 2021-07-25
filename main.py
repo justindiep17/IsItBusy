@@ -23,7 +23,12 @@ def submit():
 
 @app.route("/search-submit")
 def search_submit():
-    user_ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
+    if 'X-Forwarded-For' in request.headers:
+        proxy_data = request.headers['X-Forwarded-For']
+        ip_list = proxy_data.split(',')
+        user_ip = ip_list[0]  # first address in list is User IP
+    else:
+        user_ip = request.remote_addr  # For local development
     # response_ll = requests.get("http://ip-api.com/json/" + user_ip).json()
     # lat = str(response_ll["lat"])
     # lon = str(response_ll["lon"])
