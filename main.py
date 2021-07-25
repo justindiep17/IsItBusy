@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 from flask_pymongo import PyMongo
+import os
 import requests
 # from configure import FOURSQUARE_CLIENT_ID, FOURSQUARE_CLIENT_SECRET, SECRET_KEY, MONGO_URI
 
 app = Flask(__name__)
-app.secret_key = SECRET_KEY
+app.secret_key = os.environ.get("SECRET_KEY")
 
 # app.config["MONGO_URI"] = MONGO_URI
 # mongo = PyMongo(app)
@@ -29,8 +30,8 @@ def search_submit():
     print(lat + "," + lon)
     query = request.args.get("loc")
     params = {
-        "client_id": FOURSQUARE_CLIENT_ID,
-        "client_secret": FOURSQUARE_CLIENT_SECRET,
+        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID"),
+        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET"),
         "ll": lat+","+lon,
         "query": query,
         "limit": 20,
