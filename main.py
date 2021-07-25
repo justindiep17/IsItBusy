@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
 from flask_pymongo import PyMongo
 import requests
-# from configure import FOURSQUARE_CLIENT_ID, FOURSQUARE_CLIENT_SECRET, SECRET_KEY, MONGO_URI
+from configure import FOURSQUARE_CLIENT_ID, FOURSQUARE_CLIENT_SECRET, SECRET_KEY, MONGO_URI
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
-
-app.config["MONGO_URI"] = MONGO_URI
-mongo = PyMongo(app)
+#
+# app.config["MONGO_URI"] = MONGO_URI
+# mongo = PyMongo(app)
 
 
 @app.route("/")
