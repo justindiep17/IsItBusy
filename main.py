@@ -13,7 +13,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 @app.route("/")
 def home():
-    return render_template("test.html")
+    return render_template("home.html")
 
 
 @app.route("/submit")
