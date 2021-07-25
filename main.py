@@ -24,30 +24,30 @@ def submit():
 @app.route("/search-submit")
 def search_submit():
     user_ip = request.remote_addr
-    print(user_ip)
-    response_ll = requests.get("http://ip-api.com/json/" + user_ip).json()
-    lat = str(response_ll["lat"])
-    lon = str(response_ll["lon"])
-    print(lat + "," + lon)
-    query = request.args.get("loc")
-    params = {
-        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID"),
-        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET"),
-        "ll": lat+","+lon,
-        "query": query,
-        "limit": 20,
-        "categoryId": "52f2ab2ebcbc57f1066b8b46,4bf58dd8d48988d118951735",
-        "v": "20210701"
-    }
-    response = requests.get("https://api.foursquare.com/v2/venues/search", params=params)
-    response.raise_for_status()
-    data = response.json()
-    grocery_stores_info = []
-    for store in data["response"]["venues"]:
-        store_info = (store["id"], store["name"], store["location"]["formattedAddress"])
-        grocery_stores_info.append(store_info)
+    # response_ll = requests.get("http://ip-api.com/json/" + user_ip).json()
+    # lat = str(response_ll["lat"])
+    # lon = str(response_ll["lon"])
+    # print(lat + "," + lon)
+    # query = request.args.get("loc")
+    # params = {
+    #     "client_id": os.environ.get("FOURSQUARE_CLIENT_ID"),
+    #     "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET"),
+    #     "ll": lat+","+lon,
+    #     "query": query,
+    #     "limit": 20,
+    #     "categoryId": "52f2ab2ebcbc57f1066b8b46,4bf58dd8d48988d118951735",
+    #     "v": "20210701"
+    # }
+    # response = requests.get("https://api.foursquare.com/v2/venues/search", params=params)
+    # response.raise_for_status()
+    # data = response.json()
+    # grocery_stores_info = []
+    # for store in data["response"]["venues"]:
+    #     store_info = (store["id"], store["name"], store["location"]["formattedAddress"])
+    #     grocery_stores_info.append(store_info)
 
-    return render_template("search_submit.html", stores=grocery_stores_info)
+    return render_template("text.html", ip=user_ip)
+    # return render_template("search_submit.html", stores=grocery_stores_info)
 
 
 if __name__ == "__main__":
