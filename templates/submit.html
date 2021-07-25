@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+    <!-- Banner -->
+    <div class="row">
+        <div class="col-12" id="submit-page" style="background-image: url('../static/images/GroceryAisle.jpg');">
+            <h2 class="page-title">Submit Busyness Data About Your Local Grocery Store To Help Others Just Like You</h2>
+            <form method="get" action="{{url_for('search_submit')}}">
+                <input type="text" class="search-bar" name="loc" placeholder="Enter the name of a grocery store">
+                <button type="submit" class="search-submit btn">
+                    <i class='fas fa-search fa-1x'></i> Find Store
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

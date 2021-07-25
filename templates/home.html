@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+    <!-- Front Page -->
+    <div class="row">
+        <div class="col-12" id="front-page" style="background-image: url('../static/images/Carts.png');">
+            <h2 class="page-title">Enter A City, Address, Or ZIP Code To Find The Busyness Of Local Grocery Stores Nearby</h2>
+            <form method="get">
+                <input type="text" class="search-bar">
+                <button type="submit" class="search-submit btn">
+                    <i class='fas fa-search fa-1x'></i> Find Stores
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+.row {
+    margin: 0;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.container {
+    padding-right:0px;
+}
+
+.search-results{
+    border: 2px solid red;
+}
+.col-sm-10 {
+    padding: 0px;
+}
+
+.col-sm-2 {
+    padding: 0px;
+}
+
+.btn {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #9c161a;
+    color: white;
+    border-radius: 6px;
+    border-color: #9c161a;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #8a1216;
+    border-color: #8a1216;
+}
+
+.navbar {
+    padding: 0% 8%;
+    background-color: #262924;
+}
+
+.nav-item {
+    font-family: "Asap";
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+.nav-item:hover {
+    background-color: #9c161a;
+}
+
+.nav-link {
+    color: #F5F5EF;
+}
+
+.nav-link:hover {
+    color: #F5F5EF;
+}
+
+/* Front Page */
+
+#front-page, #submit-page {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: no-repeat center center;
+    background-size: cover;
+    padding: 0% calc(8% + 2.25rem);
+}
+
+.page-title {
+    color: white;
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+    font-family: "Asap";
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.search-bar, .results-search-bar {
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.55rem 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 1vh;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.results-search-bar {
+    margin-bottom: 0;
+}
+
+.search-submit {
+    margin-top: 0.5rem;
+}
+
+.search-submit::hover {
+    color: white;
+}
+
+.search-results {
+    margin-top: 5vh;
+    padding: 0% calc(8% + 1.5rem);
+}
+
+
+
+.results-search-form {
+    padding: 0% calc(8% + 1.5rem);
+    margin-top: 5vh;
+}
+
+.results-search-form row {
+    padding: 0px !important;
+}
+
+.btn-wrapper {
+    padding-right: 0px;
+    padding-left: 6px;
+}
+
+.btn-wrapper button {
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.search-submit-result {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0% calc(8% + 1.5rem);
+    margin-right: 0px;
+}
+
+.search-submit-result div {
+    padding: 0.5rem 0rem;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.store-name {
+    font-family: "Asap";
+    font-weight: 400;
+}
+
+.store-address {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 1.5rem;
+}

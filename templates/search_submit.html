@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+
+<!--Navbar-->
+{% include "navbar.html" %}
+<!--Search Results-->
+
+    <form class="row results-search-form">
+        <div class="row">
+            <input type="text" class="results-search-bar col-sm-10">
+            <div class="col-sm-2 btn-wrapper">
+                <button type="submit" class="btn">
+                    <i class='fas fa-search fa-1x'></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+    {% for store in stores %}
+    <div class="row search-submit-result">
+        <div class="col-sm-10">
+            <h2 class="store-name">{{store[1]}}</h2>
+            <h3 class="store-address">
+            {% for item in store[2] %}
+                {% if item != store[2][-1] %}
+                    {{item}},
+                {% else %}
+                    {{item}}
+                {% endif %}
+            {% endfor %}
+            </h3>
+        </div>
+        <div class="col-sm-2 btn-wrapper">
+            <button class="btn">
+                Submit Data
+            </button>
+        </div>
+    </div>
+    {% endfor %}
+
+
+
+</body>
+</html>
