@@ -33,14 +33,22 @@
             </h3>
         </div>
         <div class="col-sm-2 btn-wrapper">
-            <a type="submit" class="btn" href="{{url_for('submit_data', id=store[0], name=store[1], address=store[2])}}">
-                Submit Data
-            </a>
+            {% if store[3] == -1 %}
+            <h2 class="busyness-level-label">No Data Available</h2>
+            {% elif store[3] == 1 %}
+            <h2 class="busyness-level-label">Dead</h2>
+            {% elif store[3] == 2 %}
+            <h2 class="busyness-level-label">Unbusy</h2>
+            {% elif store[3] == 3 %}
+            <h2 class="busyness-level-label">Normal</h2>
+            {% elif store[3] == 4 %}
+            <h2 class="busyness-level-label">Slightly Busy</h2>
+            {% elif store[3] == 5 %}
+            <h2 class="busyness-level-label">Very Busy</h2>
+            {% endif %}
         </div>
     </div>
     {% endfor %}
-
-
 
 </body>
 </html>

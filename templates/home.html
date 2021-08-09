@@ -8,12 +8,12 @@
     <div class="row">
         <div class="col-12" id="front-page" style="background-image: url('../static/images/Carts.png');">
             <h2 class="page-title">Enter A City, Address, Or ZIP Code To Find The Busyness Of Local Grocery Stores Nearby</h2>
-            <form method="get">
-             <input type="text" class="search-bar">
+            <form method="get" action="{{url_for('search_find')}}">
+                <input type="text" class="search-bar" name="loc" placeholder="Enter a city, address, or ZIP code">
                 <button type="submit" class="search-submit btn">
-                <i class='fas fa-search fa-1x'></i> Find Stores
-            </button>
-        </form>
+                    <i class='fas fa-search fa-1x'></i> Find Store
+                </button>
+            </form>
     </div>
     </div>
 

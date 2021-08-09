@@ -125,15 +125,18 @@
 }
 
 .btn-wrapper {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
     padding-right: 0px;
     padding-left: 6px;
 }
 
 .btn-wrapper button {
-    display: inline;
     height: 100%;
     width: 100%;
 }
+
 
 .search-submit-result {
     width: 100%;
@@ -157,4 +160,73 @@
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 1.5rem;
+}
+
+#submit-data-form {
+    margin-top: 5vh;
+    padding: 0% calc(8% + 1.5rem);
+}
+
+#submit-data-form h2 {
+    font-family: "Asap";
+    font-size: 2.25rem;
+}
+
+#submit-data-form .form {
+    margin-top: 2vh;
+}
+
+#busyness {
+    margin-top: 5vh;
+}
+
+#busyness li input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#submit_data {
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+}
+
+#busyness li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+
+#busyness li label {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: block;
+}
+
+div.radio {
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+}
+
+div.radio label {
+    display: block;
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+#submit-data {
+    display: block;
+}
+
+.red-text {
+    color: #9c161a;
+}
+
+.busyness-level-label {
+    font-family: "Asap";
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
 }
