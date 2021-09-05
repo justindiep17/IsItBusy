@@ -39,6 +39,7 @@
 
 .navbar {
     padding: 0% 8%;
+    padding-left: calc(8% + 2.25rem);
     background-color: #262924;
 }
 
