@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Fixed error requiring configure.py">
+    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Fixed Environ Variables Not Registering">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632711422445</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixed Environ Variables Not Registering">
+      <created>1632711586834</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1632711586834</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,6 +300,7 @@
     <MESSAGE value="Deploying" />
     <MESSAGE value="Update requirements.txt" />
     <MESSAGE value="Fixed error requiring configure.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed error requiring configure.py" />
+    <MESSAGE value="Fixed Environ Variables Not Registering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Environ Variables Not Registering" />
   </component>
 </project>

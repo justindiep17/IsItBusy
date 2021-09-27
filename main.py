@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired
 from flask_pymongo import PyMongo
 import os
 import requests
-# from configure import FOURSQUARE_CLIENT_ID, FOURSQUARE_CLIENT_SECRET, SECRET_KEY, MONGO_URI, GOOGLE_API_KEY, MY_IP
+from configure import FOURSQUARE_CLIENT_ID, FOURSQUARE_CLIENT_SECRET, SECRET_KEY, MONGO_URI, GOOGLE_API_KEY, MY_IP
 import datetime as dt
 import time
 
