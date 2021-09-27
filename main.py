@@ -11,7 +11,7 @@ import datetime as dt
 import time
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", SECRET_KEY)
+app.secret_key = SECRET_KEY
 
 bootstrap = Bootstrap(app)
 
