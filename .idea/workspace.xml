@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Update requirements.txt" />
+    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Fixed error requiring configure.py">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +244,28 @@
       <option name="project" value="LOCAL" />
       <updated>1632711103162</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Update requirements.txt">
+      <created>1632711173871</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1632711173871</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixed error requiring configure.py">
+      <created>1632711282630</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1632711282630</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fixed error requiring configure.py">
+      <created>1632711422445</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1632711422445</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +292,7 @@
     <MESSAGE value="- Rebranded website as 'Busy?'&#10;- Slight visual fix to navbar" />
     <MESSAGE value="Deploying" />
     <MESSAGE value="Update requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update requirements.txt" />
+    <MESSAGE value="Fixed error requiring configure.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error requiring configure.py" />
   </component>
 </project>
