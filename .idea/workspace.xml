@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="Multiple Changes:&#10;1.Created &quot;search_find.html&quot; To Display Search Result Of Local Grocery Stores&#10;2.Added Functionality To Search For Busyness Of Local Grocery Stores Based On User Submitted Data With Help From Foursquare and Google Map APIs&#10;3.Other CSS Design Changes In &quot;main.css&quot;">
+    <list default="true" id="85c58804-75e9-432d-9348-72487c84bf93" name="Default Changelist" comment="- Rebranded website as 'Busy?'&#10;- Slight visual fix to navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628475630715</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- Rebranded website as 'Busy?'&#10;- Slight visual fix to navbar">
+      <created>1630815786882</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1630815786882</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +255,7 @@
     <MESSAGE value="Testing Errors" />
     <MESSAGE value="Added Functionality Of Obtaining User's IP Address In Order To Help Obtain The Location Of User." />
     <MESSAGE value="Multiple Changes:&#10;1.Created &quot;search_find.html&quot; To Display Search Result Of Local Grocery Stores&#10;2.Added Functionality To Search For Busyness Of Local Grocery Stores Based On User Submitted Data With Help From Foursquare and Google Map APIs&#10;3.Other CSS Design Changes In &quot;main.css&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple Changes:&#10;1.Created &quot;search_find.html&quot; To Display Search Result Of Local Grocery Stores&#10;2.Added Functionality To Search For Busyness Of Local Grocery Stores Based On User Submitted Data With Help From Foursquare and Google Map APIs&#10;3.Other CSS Design Changes In &quot;main.css&quot;" />
+    <MESSAGE value="- Rebranded website as 'Busy?'&#10;- Slight visual fix to navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Rebranded website as 'Busy?'&#10;- Slight visual fix to navbar" />
   </component>
 </project>

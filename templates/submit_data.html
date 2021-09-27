@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+
+<body>
+{% import "bootstrap/wtf.html" as wtf %}
+<!-- Navbar -->
+{% include "navbar.html" %}
+
+<section id="submit-data-form">
+    <h2>Enter The Busyness Data For <span class="red-text">{{name}}</span> at <span class="red-text">{{address}}</span></h2>
+    <form method="POST" novalidate="true" action="{{url_for(request.endpoint, **request.view_args)}}">
+				{{ form.csrf_token }}
+                {{ form.busyness }}
+                <input type="submit" class="btn" value="Submit">
+    </form>
+</section>
+
+
+</body>
+</html>
