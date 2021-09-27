@@ -11,11 +11,11 @@ import datetime as dt
 import time
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', SECRET_KEY)
+app.secret_key = os.environ.get('SECRET_KEY')
 
 bootstrap = Bootstrap(app)
 
-mongo = PyMongo(app, uri=os.environ.get('MONGO_URI', MONGO_URI))
+mongo = PyMongo(app, uri=os.environ.get('MONGO_URI'))
 db = mongo.db
 
 
@@ -40,7 +40,7 @@ def search_find():
         GOOGLE_GEOCODE_API_EP = "https://maps.googleapis.com/maps/api/geocode/json?"
         params_geocode = {
             "address": query,
-            "key": os.environ.get('GOOGLE_API_KEY', GOOGLE_API_KEY)
+            "key": os.environ.get('GOOGLE_API_KEY')
         }
         response_geocode = requests.get(GOOGLE_GEOCODE_API_EP, params=params_geocode)
         lat = str(response_geocode.json()["results"][0]["geometry"]["location"]["lat"])
@@ -57,8 +57,8 @@ def search_find():
         lat = str(response_ll["lat"])
         lon = str(response_ll["lon"])
     params = {
-        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID", FOURSQUARE_CLIENT_ID),
-        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET", FOURSQUARE_CLIENT_SECRET),
+        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID"),
+        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET"),
         "ll": lat + "," + lon,
         "radius": 5000,
         "limit": 50,
@@ -116,8 +116,8 @@ def search_submit():
     lon = str(response_ll["lon"])
     query = request.args.get("loc")
     params = {
-        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID", FOURSQUARE_CLIENT_ID),
-        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET", FOURSQUARE_CLIENT_SECRET),
+        "client_id": os.environ.get("FOURSQUARE_CLIENT_ID"),
+        "client_secret": os.environ.get("FOURSQUARE_CLIENT_SECRET"),
         "ll": lat+","+lon,
         "query": query,
         "limit": 20,
