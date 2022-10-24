@@ -72,7 +72,7 @@ def search_find():
     now = dt.datetime.now()
     for store in data["response"]["venues"]:
 #         store_db = db.stores.find_one({'store_id': store["id"]})
-        store_db = false
+        store_db = False
         store_busyness = 0
         total_weight = 0
         total_data_sum = 0
