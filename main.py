@@ -70,30 +70,31 @@ def search_find():
     data = response.json()
     grocery_stores_info = []
     now = dt.datetime.now()
-    for store in data["response"]["venues"]:
-        store_db = db.stores.find_one({'store_id': store["id"]})
-        store_busyness = 0
-        total_weight = 0
-        total_data_sum = 0
-        if store_db:  # store is already registered in database
-            busyness_data = store_db["data"]
-            for data_entry in busyness_data:
-                entry_time = dt.datetime.strptime(data_entry[0], "%m/%d/%Y/%H/%M/%S")
-                difference = round((now-entry_time).total_seconds()/60) #calculate difference in minutes between entrytime and now
-                if difference > 720: #don't use submissions older than 720 minutes old
-                    continue
-                else:
-                    entry_weight = calc_data_weight(difference)
-                    total_weight += entry_weight
-                    total_data_sum += entry_weight * data_entry[1]
-            if total_data_sum == 0 or total_weight == 0:
-                weighted_busyness_avg = -1
-            else:
-                weighted_busyness_avg = round(total_data_sum / total_weight)
-        else:
-            weighted_busyness_avg = -1
-        store_info = (store["id"], store["name"], store["location"]["formattedAddress"], weighted_busyness_avg)
-        grocery_stores_info.append(store_info)
+    print(db);
+#     for store in data["response"]["venues"]:
+#         store_db = db.stores.find_one({'store_id': store["id"]})
+#         store_busyness = 0
+#         total_weight = 0
+#         total_data_sum = 0
+#         if store_db:  # store is already registered in database
+#             busyness_data = store_db["data"]
+#             for data_entry in busyness_data:
+#                 entry_time = dt.datetime.strptime(data_entry[0], "%m/%d/%Y/%H/%M/%S")
+#                 difference = round((now-entry_time).total_seconds()/60) #calculate difference in minutes between entrytime and now
+#                 if difference > 720: #don't use submissions older than 720 minutes old
+#                     continue
+#                 else:
+#                     entry_weight = calc_data_weight(difference)
+#                     total_weight += entry_weight
+#                     total_data_sum += entry_weight * data_entry[1]
+#             if total_data_sum == 0 or total_weight == 0:
+#                 weighted_busyness_avg = -1
+#             else:
+#                 weighted_busyness_avg = round(total_data_sum / total_weight)
+#         else:
+#             weighted_busyness_avg = -1
+#         store_info = (store["id"], store["name"], store["location"]["formattedAddress"], weighted_busyness_avg)
+#         grocery_stores_info.append(store_info)
     return render_template("search_find.html", stores=grocery_stores_info)
 
 
